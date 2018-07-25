@@ -4,6 +4,7 @@ import Arrow from './Arrow';
 import Modal from '../popups/Modal';
 import leftArrow from '../assets/leftarrow.png';
 import rightArrow from '../assets/rightarrow.png';
+import APIURL from '../helpers/environment';
 import styled from '../../node_modules/styled-components';
 
 const GridDiv = styled.div`
@@ -46,7 +47,7 @@ class RecipeList extends Component {
     }
 
     getMeals = () => {
-        fetch(`http://localhost:3000/recipes/recipe/${this.props.mealType}`, {
+        fetch(`${APIURL}/recipes/recipe/${this.props.mealType}`, {
             method: 'GET',
             headers: ({
             'Content-Type':'application/json',
@@ -75,7 +76,7 @@ class RecipeList extends Component {
     }
 
     deleteMeal = (mealId) => {
-        fetch(`http://localhost:3000/recipes/recipe/${mealId}`, {
+        fetch(`${APIURL}/recipes/recipe/${mealId}`, {
             method: 'DELETE',
             headers: ({
             'Content-Type':'application/json',
@@ -160,17 +161,3 @@ class RecipeList extends Component {
 }
 
 export default RecipeList;
-
-// deleteMealTest = () => {
-//   fetch('http://localhost:3000/recipes/recipe/18', {
-//     method: 'DELETE',
-//     headers: ({
-//       'Content-Type':'application/json',
-//       'Authorization': this.state.sessionToken
-//     })
-//   }).then((response) => {
-//     if(response.status == 200){
-//       console.log('way to go!')
-//     }
-//   })
-// }

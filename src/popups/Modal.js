@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import APIURL from '../helpers/environment';
 import styled from 'styled-components';
 
 const ModalDiv = styled.div`
@@ -47,7 +48,7 @@ class Modal extends Component {
     }
 
     mealUpdate = () => {
-        fetch(`http://localhost:3000/recipes/recipe/${this.props.indexNum}`, {
+        fetch(`${APIURL}/recipes/recipe/${this.props.indexNum}`, {
             method: 'PUT',
             body: JSON.stringify({
             recipe:{
@@ -70,7 +71,7 @@ class Modal extends Component {
     }
 
     newMeal = () => {
-        fetch('http://localhost:3000/recipes/recipe/new', {
+        fetch(`${APIURL}/recipes/recipe/new`, {
             method: 'POST',
             body: JSON.stringify({
             recipe: {

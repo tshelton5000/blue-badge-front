@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import styled from '../../node_modules/styled-components';
+import APIURL from '../helpers/environment';
 
 const Background = styled.div`
     background: linear-gradient(to bottom left,#99D564, #EEB76F, #7453A2);
@@ -63,7 +64,7 @@ class Login extends Component {
 
     login = (event) => {
         event.preventDefault();
-        fetch('http://localhost:3000/recipes/login', {
+        fetch(`${APIURL}/recipes/login`, {
             method: 'POST',
             body: JSON.stringify({
             user: {
