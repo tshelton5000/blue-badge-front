@@ -76,7 +76,7 @@ class Signup extends Component {
             'Content-Type': 'application/json'
             })
         }).then((response) => {
-            response.json()
+            return response.json()
         })
         .then((data) => {
             this.props.setToken(data.sessionToken)
