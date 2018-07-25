@@ -1,0 +1,12 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+ <title>HouseOutline</title>
+<g>
+  <title>Layer 1</title>
+  <line stroke="#000000" id="svg_1" y2="818.666672" x2="1401.467349" y1="818.666672" x1="6.666667" stroke-width="10" fill="none"/>
+  <line id="svg_2" y2="657.245203" x2="1397.333333" y1="818.666667" x1="1397.333333" stroke-width="10" stroke="#000000" fill="none"/>
+  <line id="svg_3" y2="658.622604" x2="1589.333262" y1="820.044068" x1="1589.333262" stroke-width="10" stroke="#000000" fill="none"/>
+  <line stroke="#000000" id="svg_6" y2="558.758464" x2="1495.908208" y1="689.333327" x1="1365.333345" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="10" fill="none"/>
+  <line stroke="#000000" id="svg_7" y2="556.797963" x2="1490.131313" y1="686.666665" x1="1620.000014" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="10" fill="none"/>
+  <line stroke="#000000" id="svg_9" y2="817.333334" x2="1913.377046" y1="817.333334" x1="1583.999991" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="10" fill="none"/>
+ </g>
+</svg>
